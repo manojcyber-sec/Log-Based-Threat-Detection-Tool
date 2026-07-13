@@ -1,0 +1,15 @@
+2024-01-15 08:23:11 | INFO | 192.168.1.105 | EventID:4624 | User:admin | Successful login
+2024-01-15 08:45:32 | WARNING | 192.168.1.200 | EventID:4625 | User:john | Failed login attempt
+2024-01-15 08:45:35 | WARNING | 192.168.1.200 | EventID:4625 | User:john | Failed login attempt
+2024-01-15 08:45:38 | WARNING | 192.168.1.200 | EventID:4625 | User:john | Failed login attempt
+2024-01-15 08:45:40 | WARNING | 192.168.1.200 | EventID:4625 | User:john | Failed login attempt
+2024-01-15 09:10:05 | INFO | 192.168.1.101 | EventID:4624 | User:mary | Successful login
+2024-01-15 09:15:22 | WARNING | 192.168.1.105 | EventID:4625 | User:admin | Failed login attempt
+2024-01-15 09:15:25 | WARNING | 192.168.1.105 | EventID:4625 | User:admin | Failed login attempt
+2024-01-15 09:15:28 | WARNING | 192.168.1.105 | EventID:4625 | User:admin | Failed login attempt
+2024-01-15 09:20:11 | ERROR | 192.168.1.200 | EventID:4740 | User:john | Account locked out
+2024-01-15 09:45:00 | WARNING | 192.168.1.333 | EventID:4625 | User:root | Failed login attempt
+2024-01-15 09:45:03 | WARNING | 192.168.1.333 | EventID:4625 | User:administrator | Failed login attempt
+2024-01-15 09:45:06 | WARNING | 192.168.1.333 | EventID:4625 | User:mary | Failed login attempt
+2024-01-15 09:45:09 | WARNING | 192.168.1.333 | EventID:4625 | User:john | Failed login attempt
+2024-01-15 10:05:33 | INFO | 192.168.1.200 | EventID:4624 | User:john | Successful login

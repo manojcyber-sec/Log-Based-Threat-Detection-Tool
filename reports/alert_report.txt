@@ -1,0 +1,31 @@
+SOC Threat Detection Report
+Generated: 2026-04-27 19:39:51
+Total Alerts: 4
+
+[1] Brute Force
+Severity: HIGH
+IP: 192.168.1.200
+User: john
+Details: 3+ failed logins within 60s
+Action: Block IP or enable MFA
+----------------------------------------
+[2] Brute Force
+Severity: HIGH
+IP: 192.168.1.105
+User: admin
+Details: 3+ failed logins within 60s
+Action: Block IP or enable MFA
+----------------------------------------
+[3] Credential Stuffing
+Severity: CRITICAL
+IP: 192.168.1.333
+Details: Multiple users targeted: mary, root, administrator, john
+Action: Block IP and monitor affected accounts
+----------------------------------------
+[4] Possible Account Compromise
+Severity: CRITICAL
+IP: 192.168.1.200
+User: john
+Details: Failed login attempts followed by successful login
+Action: Reset password and investigate account activity
+----------------------------------------
