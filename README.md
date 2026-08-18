@@ -1,30 +1,72 @@
 # Log-Based Threat Detection Tool
 
-A Python-based log analysis tool that detects common authentication attack patterns such as brute force attacks, credential stuffing, and possible account compromise.
+A Python-based security log analysis tool that identifies suspicious authentication activity and converts raw log events into structured security alerts.
 
-## Features
-- Parses authentication logs
-- Detects brute force attempts using time-based analysis
-- Detects credential stuffing from a single IP
-- Identifies possible account compromise by correlating failed and successful logins
-- Generates structured alert reports
+> **Project Type:** Cybersecurity / SOC / Blue Team  
+> **Status:** Academic & Portfolio Project
 
-## Technologies Used
-- Python
-- Log Analysis
-- Cybersecurity
-- Incident Response
+---
 
-## Folder Structure
-- `logs/` – sample input logs
-- `reports/` – generated alert reports
-- `screenshots/` – output screenshots
-- `src/` – source code
+## 🎯 Project Objective
 
-## How to Run
-1. Clone the repository
-2. Open the `src` folder
-3. Run the main Python file
+SOC analysts frequently investigate authentication logs to identify suspicious activity such as repeated login failures, credential attacks, and possible account compromise.
 
-## Project Outcome
-This project helped me understand how SOC analysts identify suspicious authentication behavior from logs and turn raw events into actionable alerts.
+This project demonstrates a simple rule-based detection workflow:
+
+**Authentication Logs → Log Parsing → Detection Rules → Alert Generation → Incident Report**
+
+---
+
+## 🔍 Detection Capabilities
+
+The tool currently detects:
+
+### 1. Brute-Force Attacks
+Identifies repeated failed authentication attempts occurring within a defined time window.
+
+### 2. Credential Stuffing
+Detects repeated authentication attempts associated with the same source IP and multiple targeted accounts.
+
+### 3. Possible Account Compromise
+Correlates failed authentication attempts with a subsequent successful login to identify potentially compromised accounts.
+
+---
+
+## ⚡ Features
+
+- Authentication log parsing
+- Time-based brute-force detection
+- Source-IP based credential-stuffing detection
+- Failed-login and successful-login correlation
+- Severity-based alert generation
+- Structured security reports
+- Sample authentication logs for testing
+- Modular Python implementation
+
+---
+
+## 🏗️ Detection Workflow
+
+```text
+Authentication Logs
+        │
+        ▼
+     Log Parser
+        │
+        ▼
+ Detection Engine
+        │
+   ┌────┼───────────────┐
+   ▼    ▼               ▼
+Brute  Credential     Account
+Force  Stuffing       Compromise
+   │    │               │
+   └────┴───────┬───────┘
+                ▼
+          Security Alerts
+                │
+                ▼
+          Alert Reporter
+                │
+                ▼
+          Incident Report
