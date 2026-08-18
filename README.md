@@ -7,7 +7,7 @@ A Python-based security log analysis tool that identifies suspicious authenticat
 
 ---
 
-## 🎯 Project Objective
+## Project Objective
 
 SOC analysts frequently investigate authentication logs to identify suspicious activity such as repeated login failures, credential attacks, and possible account compromise.
 
@@ -17,7 +17,7 @@ This project demonstrates a simple rule-based detection workflow:
 
 ---
 
-## 🔍 Detection Capabilities
+## Detection Capabilities
 
 The tool currently detects:
 
@@ -32,7 +32,7 @@ Correlates failed authentication attempts with a subsequent successful login to 
 
 ---
 
-## ⚡ Features
+## Features
 
 - Authentication log parsing
 - Time-based brute-force detection
@@ -45,7 +45,7 @@ Correlates failed authentication attempts with a subsequent successful login to 
 
 ---
 
-## 🏗️ Detection Workflow
+## Detection Workflow
 
 ```text
 Authentication Logs
